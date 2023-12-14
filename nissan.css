@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+   
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    padding-left:120px;
+    padding-right:120px;   
+}
+.text{
+    background-image: url(https://www.nissan-global.com/library/assets/img/hd_logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.menyu{
+    border-bottom:  solid darkgray;
+    margin-bottom: 30px;
+    
+}
+
+.ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+    justify-content: center;
+    box-shadow: 0px 10px  10px 5px silver;
+    border: 1px solid rgb(62, 86, 195);
+}
+.list{
+    margin-right: 20px;
+}
+
+.a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px 30px;
+    transition: 0.2s;
+    transform: linear,0.5 background-color linear;
+}
+.a:hover{
+    transform: rotate(-3deg);
+    background-color: silver;
+}
+
+.wrap{
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.p{
+    margin: 10px;
+}
+.kfs{
+    margin: 10px;
+    color: red;
+}
+.manzil{
+    float: right;
+}
+.foto{
+    /* margin: 10px; */
+    padding: auto;
+    width: 350px;
+    margin-bottom:30px;
+    perspective: 1300px;
+    border-radius: 10px;
+    box-shadow: 0px 10px  10px 5px silver;
+} 
+
+.link-foto{
+   
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(42, 179, 225);
+    padding: 5px 10px ;
+    font-weight: bold;
+    transform: linear, 0.5 background-color linear;
+    margin: 5px;
+}
+.link-foto:hover{
+    color: blue;
+    background-color:white;
+    transform: rotateY(25deg);
+    transform-origin: 50% 50%;
+    box-shadow: 0px 0px 20px 5px lightskyblue;
+    border: 1px blue solid;
+}
+
+.rasm{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+    /* transform: linear, 0.1 background-color linear; */
+}
+
+.rasm:hover{
+    /* transform: rotateX(10deg); */
+    opacity:0.7;
+    transform-origin: 50% 100%;
+    box-shadow: 0px 0px 20px 5px lightblue;
+}
+
+.button{
+    padding: 30px 0px;
+    text-align: center; 
+}
+.button2{
+    width: 175px;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+}
+
+.kinopka{
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    padding: 10px 30px;
+    border: 3px solid;
+    font-weight: bold; 
+}
+
+.kinopka:hover{
+    color: white;
+    background-color: red;
+    transform: scale(1.1);
+}
+.footer{
+    background-image: url();
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: top center  ;
+    background-size: cover;
+    text-align: center;
+  }
+  .footer_form{
+    padding: 40px;
+    padding-bottom: 0;
+  }
+  .obuna{
+    border-radius: 4px;
+    background-color: red;
+    padding: 5px;
+    border-style: none;
+  }
+  .footer_input{
+    padding: 5px;
+  }
+  .footer_text{
+   float: left;
+   
+    color: black;
+    font-weight: bold;
+  }
+
+
+  @media  (max-width:1100px){
+    .container{
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+@media  (max-width:900px){
+    .container{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .foto{
+    width: 48%;
+    margin-bottom: 50px;
+    perspective: 1300px;
+    }
+    .link-foto{
+        padding: 0;
+    }
+}
+
+@media  (max-width:600px){
+    .container{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .foto{
+    width: 100%;
+    margin-bottom: 0px;
+    perspective: 1300px;
+    }
+    .link-foto{
+        padding: 0;
+    }
+    .p{
+        font-size: 25px;
+    }
+}
